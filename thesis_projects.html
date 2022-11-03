@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AJS</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="jan.css" />
+</head>
+<body>
+  <div class="topnav">
+    <a class="active" href="index.html">Arabella Jane Sinclair </a>
+    <a href="about.html">About</a>
+    <a href="teaching.html">Teaching</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+
+
+<div class="row">
+  <div class="side">
+    <img src="figs/myface.png" alt="Avatar">
+    <h1>Arabella Jane Sinclair </h1>
+    <h3> Lecturer, Computer Science</h3>
+    <h5> University of Aberdeen </h5>
+    <a href="https://scholar.google.nl/citations?user=PSOtEH4AAAAJ&hl=en"><img class="icon" src="figs/scholar.png" alt="scholar"></a>
+    <a href="https://www.linkedin.com/in/arabella-sinclair-93037b1b5/"><img class="icon" src="figs/linkedin.png" alt="linkedin"></a>
+
+
+
+  </div>
+  <div class="main">
+
+    <!-- Page content here-->
+    <h2>BSc Honours Thesis Topics</h2>
+
+    <p>If you are a current 4th year Honours student at the University of Aberdeen, and are interested in one of these projects, or have ideas for a project that is related to my research (see publications and past supervision projects), then please feel free to <a href="https://www.abdn.ac.uk/ncs/departments/computing-science/people-158.php">contact me</a> via email or blackboard.</p>
+
+        <h3 id="interpreting-transformer-attention-during-next-utterance-dialogue-generation-from-human-contexts">1. Interpreting Transformer Attention During Next Utterance Dialogue Generation from Human Contexts</h3>
+        <p><em>Evaluation, Interpretability, Dialogue, Language Generation, Alignment</em></p>
+        <div class="project_paragraph">
+          <p> Transformer language models are increasingly proficient at generating convincingly human-like language, even when generating dialogue. Humans have been found to adapt and align their language to one another in dialogue, a convincing model of dialogue should do the same. This project aims to explore what features of the dialogue context provided to the model most influence a model’s generation of a proposed next utterance. It will then compare the influence the context has on it’s comprehension of the human utterance that came next in the true dialogue data. From this comparison, as well as building on work measuring the degree of vocabulary overlap between human vs machine ‘speakers’ we can analyse and evaluate the degree to which model generation behaviour is human-like and where this diverges, through the perspective of linguistic alignment. The addition of interpretability techniques will allow our analysis to be more fine grained: exploring to what extent the model attends to different speakers in the preceding dialogue context, and answering questions about between vs within speaker alignment differences between humans and language models.</p>
+          <p><strong>Expectations</strong>: Student will have strong programming skills, a good working knowledge of python, and is willing to learn and work with transformer language models, such as gpt2, T5, or Dialogpt. This project will require the use of multiple libraries for analysis, and potentially making use of the Macleod server for performing some experiments, depending on the ability/ambition of the student.</p>
+          <table>
+            <tbody>
+            <tr>
+            <td>Datasets</td>
+            <td>
+              <ul>
+              <li>Conversational open domain dialogue:
+              <a href="http://compprag.christopherpotts.net/swda.html">Switchboard</a></li>
+              <li>Task based closed domain dialogue
+              <a href="https://groups.inf.ed.ac.uk/maptask/">MapTask</a></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>Models</td>
+            <td>
+              <ul>
+              <li><a href="https://arxiv.org/pdf/1911.00536.pdf">Dialogpt</a></li>
+              <li>Other sota potential comparisons
+              -<a href="https://aclanthology.org/2020.nlp4convai-1.7.pdf">https://aclanthology.org/2020.nlp4convai-1.7.pdf</a><ul>
+              <li><a href="https://arxiv.org/pdf/2109.02492.pdf">https://arxiv.org/pdf/2109.02492.pdf</a></li>
+              <li><a href="https://arxiv.org/pdf/2201.08239.pdf">https://arxiv.org/pdf/2201.08239.pdf</a></li>
+              <li><a href="https://aclanthology.org/2020.findings-emnlp.268.pdf">https://aclanthology.org/2020.findings-emnlp.268.pdf</a></li>
+              </ul>
+              </li>
+              <li><a href="https://huggingface.co/google/flan-t5-xl?text=Next+utterance+generation.+speaker+A%3A+hello+how+are+you+today%3F+speaker+B%3A+I+am+so+upset+my+dog+died+speaker+A%3A+oh+no+I+am+so+sorry+to+hear+that%2C+what+was+his+name%3F+speaker+B%3A+eddie.+speaker+A%3A">T5 zero shot</a></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>Related work</td>
+            <td>
+              <ul>
+              <li><a href="]https://proceedings.neurips.cc/paper/2021/file/03b92cd507ff5870df0db7f074728830-Paper.pdf">Local explanation of dialogue response generation</a></li>
+              <li><a href="https://arxiv.org/pdf/2011.06819.pdf">diagNNose: A Library for Neural Activation Analysis</a></li>
+              <li><a href="https://aclanthology.org/2021.acl-demo.30.pdf">Ecco: An Open Source Library for the Explainability of Transformer Language Models</a><ul>
+              <li><a href="https://github.com/jalammar/ecco">Ecco repo</a></li>
+              </ul>
+              </li>
+              </ul>
+            </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 id="exploring-bilingual-vs-language-learner-code-switching-patterns-in-dialogue">Exploring Bilingual vs. Language Learner Code Switching Patterns in Dialogue</h3>
+        <p><em>Evaluation, Analysis, Multilingual Models, Code switching, Language Learning, Clustering, Alignment, Dialogue</em></p>
+        <div class="project_paragraph">
+          <p>Code switching, or the choice of a speaker to change language during a single interaction, is typical of bilingual speakers, and can be useful to both teachers and learners in second language (L2) tuition. Understanding and predicting appropriate use of code switching in this setting has the potential to greatly enhance current computer aided language learning technologies, as well as provide an evaluation of existing multilingual representations.
+          This project will involve making use of the multilingual representations afforded to us by models such as BLOOM and using them to explore and compare the code switching behaviour of a) native spanish/catalan learners of english, and b) bilingual speakers of spanish and english, in a dialogue setting. Initially some exploratory data analysis of the two corpora will be carried out, following clustering of utterance embeddings extracted from BLOOM based on cosine similarity (to measure semantic similarity) for both the languages in the dataset. From this, this project aims to answer open research questions such as a) how semantically similar are the two languages used in these dialogues? Does this vary with learner ability level? Do clusters represent different uses of the second language in these learner dialogues, and does this differ from its purpose in bilingual dialogue? This work will build on existing work (in press, will be shared in confidence with the student working on this project) examining the role of code switching and alignment in learner dialogue, applying modern techniques to the analysis and uses of code switching in second language learner dialogue. Depending on the ability and ambition of the student, this project can also attempt to predict the incidence of code switching in an L2 setting</p>
+          <table>
+            <tbody>
+            <tr>
+            <td>Datasets</td>
+            <td>
+              <ul>
+              <li>Bilingual dialogue: <a href="https://biling.talkbank.org/access/Bangor/Miami.html">Spanish-English Bangor Miami Corpus</a></li>
+              <li>Learner dialogue: <a href="https://slabank.talkbank.org/access/English/BELC.html#:~:text=The%20Barcelona%20English%20Language%20Corpus,English%20as%20a%20foreign%20language.">Barcelona English Language Corpus</a></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>Models</td>
+            <td>
+              <ul>
+              <li><a href="https://huggingface.co/bigscience/bloom">Bloom</a></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>References</td>
+            <td>
+              <ul>
+              <li><a href="https://aclanthology.org/2020.scil-1.32.pdf">What Code-Switching Strategies are Effective in Dialogue Systems?</a></li>
+              <li><a href="https://aclanthology.org/2020.conll-1.46.pdf">Understanding Linguistic Accommodation in Code-Switched Human-Machine Dialogues</a></li>
+              <li><a href="https://arxiv.org/pdf/1904.00784.pdf">A Survey of Code-switched Speech and Language Processing</a></li>
+              <li><a href="https://sites.pitt.edu/~mdf46/Teaching_and_Research_files/FrickeKootstra2016.pdf">Code switching in bilinguals</a></li>
+              <li><a href="https://arxiv.org/pdf/2203.08979.pdf">Speaker Information Can Guide Models to Better Inductive Biases: A Case Study On Predicting Code-Switching</a></li>
+              <li><a href="https://www.mdpi.com/2226-471X/7/3/220">Building Educational technologies for code switching</a></li>
+              </ul>
+            </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 id="towards-evaluating-creativity-in-language">Towards Evaluating Creativity in Language</h3>
+        <p><em>Evaluation, Linguistic features, Prediction, Creativity, Time series</em></p>
+        <div class="project_paragraph">
+          <p>Humans use language creatively in many settings for many purposes, either for humour, creating written works of art such as poetry, creative writing or theatre, or even in their everyday language use. Some language is created with the intent to convey factual information, in this setting, use of abstraction, metaphor, or ambiguous language, is undesirable, and thus potentially limits the degree to which we categorise this language as creative This project aims to explore what linguistic markers can robustly characterise language that humans find creative and appealing, using a variety of measures drawn from areas of psycholinguistics and evaluating them on texts selected both for their creativity and for their relative lack thereof. We can then use these markers to evaluate and compare the extent to which machine-generated texts display these creative traits, independent of their success in displaying other desirable properties in generation such as fluency or coherence. We aim to address the hypothesis that creativity in language is independent of fluency, and that it is a quantity that both varies depending on context and individual human opinion.  We will explore how these features vary across text of different genres, using a feature based and neural classifier to score texts for creativity. We will then (depending on the ability &amp; ambitions of the student) design and conduct a small human evaluation of language snippets from human and model generated texts to investigate to what extent the properties discovered correlate with human judgement of creative language use.</p>
+          <table>
+            <tbody>
+            <tr>
+            <td>Datasets</td>
+            <td>
+              <ul>
+              <li><a href="https://www.gutenberg.org/">Project Gutenberg</a></li>
+              <li><a href="https://arxiv.org/pdf/1805.04833.pdf">Hierarchical neural story generation</a></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>Models</td>
+            <td>
+              <ul>
+              <li><em>Tbd: will depend on approach taken</em></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>References</td>
+            <td>
+              <ul>
+              <li><a href="https://link.springer.com/content/pdf/10.1007/978-3-642-30773-7.pdf">Burstiness of Verbs and Derived Nouns Janet B. Pierrehumbert</a></li>
+              <li><a href="https://www.proquest.com/docview/1301469364/fulltextPDF/A593EF61C3EE4DC0PQ/1?accountid=8155">Creativity in language</a> (old paper, for ideas/theory)</li>
+              <li><a href="https://www.academypublication.com/issues/past/tpls/vol03/12/tpls0312.pdf#page=66">An Analytical Rubric for Assessing Creativity in Creative Writing</a></li>
+              <li><a href="https://link.springer.com/article/10.1007/s12559-012-9156-1#Sec12">a procedure for evaluating creative systems</a> (maybe a good source of inspiration)</li>
+              <li><a href="https://roemmele.github.io/publications/fiction_generation.pdf">Evaluating Story Generation Systems Using Automated Linguistic Analyses</a></li>
+              <li><a href="https://arxiv.org/pdf/1805.04833.pdf">Hierarchical neural story generation</a></li>
+              </ul>
+            </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h3 id="evaluating-multilingual-semantic-representations-of-colour-and-emotion">Evaluating Multilingual Semantic Representations of Colour and Emotion</h3>
+        <p><em>Evaluation, Multilingual, Psycholinguistics, Semantic Representation</em></p>
+        <div class="project_paragraph">
+          <p>Multilingual models capture semantics about words in different languages, granting them increased semantic capabilities over lower resource languages. However, semantic associations for words can vary across languages and the cultures that speak them, for example, colour and emotion associations have been shown to vary by culture. Do multilingual language models capture the same language and thus culturally specific associations? This project will use as a case study a dataset in English containing human data on emotion-word associations, and evaluate the degree of difference between model’s semantic representation for these words in comparison to their corresponding emotion across selected languages. We will then compare this to human data for colour-emotion relationship in japanese, as well as colour emotion relationship (gathered in english) for Indian speakers of english. We thus have 3 distinct cultural populations to compare representations across. Understanding the cultural variations in semantic differences between words can be very important for downstream applications such as sentiment classification in reviews, or simply in evaluating texts in terms of coherence.</p>
+          <table>
+            <tbody>
+            <tr>
+            <td>Datasets</td>
+            <td>
+              <ul>
+              <li><a href="https://aclanthology.org/2020.coling-main.517.pdf">Cross lingual emotion lexicon</a></li>
+              <li><a href="https://github.com/jun-harashima/word-color-associations">github resource japanese word colour</a></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>Models</td>
+            <td>
+              <ul>
+              <li><a href="https://huggingface.co/bigscience/bloom">Bloom</a></li>
+              </ul>
+            </td>
+            </tr>
+            <tr>
+            <td>References</td>
+            <td>
+              <ul>
+              <li><a href="https://saifmohammad.com/WebPages/NRC-Emotion-Lexicon.htm">Emotion Lexicon in english</a></li>
+              <li><a href="https://arxiv.org/pdf/1309.5942v1.pdf">Measuring word colour associations</a></li>
+              <li><a href="https://aclanthology.org/L16-1336.pdf">Japanese word colour associations</a></li>
+              <li><a href="https://aclanthology.org/E12-1031.pdf">CLex resource</a></li>
+              <li><a href="https://books.google.co.uk/books?hl=en&amp;lr=&amp;id=vGOVEAAAQBAJ&amp;oi=fnd&amp;pg=PA403&amp;dq=colour+and+emotion+varies+by+culture&amp;ots=7Bj4Fvla0-&amp;sig=RaRpXMsTCfbrypbapnvt0AwHXvA#v=onepage&amp;q=colour%20and%20emotion%20varies%20by%20culture&amp;f=false">Book: Color, emotion &amp; Language</a></li>
+              </ul>
+            </td>
+            </tr>
+            </tbody>
+          </table>
+        </div>
+
+  </div>
+</div>
+
+</body>
+</html>

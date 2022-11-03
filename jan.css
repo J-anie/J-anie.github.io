@@ -2,7 +2,7 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   color:#575757;
-  font-size: 110%;
+  font-size: 90%;
 }
 
 img {
@@ -103,4 +103,8 @@ line-height: 1em;
 
 blockquote:first-letter{
 font-size: 190%;
+}
+
+div.project_paragraph {
+  margin-left: 40px
 }
