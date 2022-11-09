@@ -108,3 +108,10 @@ font-size: 190%;
 div.project_paragraph {
   margin-left: 40px
 }
+
+
+div.borderhighlight {
+ border-width:3px;
+ border-style:solid;
+ border-color:#287EC7;
+}
