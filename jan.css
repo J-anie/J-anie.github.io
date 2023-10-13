@@ -21,7 +21,8 @@ font-size: 150%;
 }
 
 .topnav {
-  background-color: #092434;/*#406378;*/
+  background-color: #95A87A;
+  /* #DBCFBB;/*#406378;*/
   overflow: hidden;
 }
 
@@ -37,16 +38,18 @@ font-size: 150%;
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #0D3349;/*#4C7791;*/
+  background-color: #9BB081; /*#0D3349;#4C7791;*/
   color: white;
 }
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #0D3349;/*#4C7791;*/
+  background-color: #95A87A; /*#0D3349; #4C7791;*/
   color: white;
 }
 
+/*  #C18429*/
+/* #DBCFBB */
 
 /* Ensure proper sizing */
 * {
